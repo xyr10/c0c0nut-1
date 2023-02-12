@@ -1,0 +1,52 @@
+/*global*/
+/*Note 1: Global applies to all*
+/*Note 2: The slash and asterisk allows you to take notes down and is green font*/
+body{
+    background-color:lightgray;
+    color: black;
+    font-family: garamond;
+}
+/*please note that Google Fonts is more modern than old ones like Arial, etc.*/
+
+p{
+    line-height: 1.5;
+}
+h1,h2,h3{
+    text-align: left;
+    text-decoration: dashed;
+}
+/*utilities*/
+.grid-two-columns{
+    display: flex;
+}
+/*header*/
+.site-header{
+    margin-top: 100px;
+    margin-bottom: 1000px;
+    color: aqua;
+    width:40%;
+}
+.site-header h1{
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 6px;
+    font-size: 52px;
+    color:#ffcc00;
+    text-shadow: 1px 1px 1px white, 2px 2px 1px white;
+}
+.site-header h2{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 4px;
+}
+.geo-location{
+    font-size: 500px;
+    font-weight: 2000;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+}
+
+/*main*/
+main{
+    width: 60%
+}
