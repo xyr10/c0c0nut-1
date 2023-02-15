@@ -12,41 +12,111 @@ p{
     line-height: 1.5;
 }
 h1,h2,h3{
-    text-align: left;
+    text-align: center;
     text-decoration: dashed;
+}
+a{
+    text-decoration: none;
+    color: green;
+    font-size: 30px;
+}
+img{
+    max-width:100%;
 }
 /*utilities*/
 .grid-two-columns{
     display: flex;
 }
+.btn{
+    background-color: darkgray;
+    color: black;
+    text-shadow: 1px 1px 1px white, 1px 1px 1px white;
+    margin:50px;
+    padding:20px;
+    text-align:center;
+    border-radius: 5px;
+    letter-spacing: 3px;
+}
+.btn-sm{
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 10px auto;
+    padding:10px;
+}
 /*header*/
+.site-header img{
+    display: block;
+    margin:10px auto;
+    width: 350px;
+    border-radius: 20px;
+    border:10px solid #c4942d;
+    padding: 2px;
+}
 .site-header{
     margin-top: 100px;
-    margin-bottom: 1000px;
-    color: aqua;
-    width:40%;
+    margin-bottom: 100px;
+    color: black;
+    width:25%;
 }
 .site-header h1{
     text-transform: capitalize;
     text-align: center;
     letter-spacing: 6px;
-    font-size: 52px;
-    color:#ffcc00;
+    font-size: 36px;
+    color:black;
     text-shadow: 1px 1px 1px white, 2px 2px 1px white;
 }
 .site-header h2{
-    text-transform: uppercase;
+    text-transform: full-width;
     text-align: center;
     letter-spacing: 4px;
+    font-size: 18px;
 }
 .geo-location{
-    font-size: 500px;
-    font-weight: 2000;
+    font-size: 18px;
+    font-weight: 100;
     font-family: 'Cormorant Garamond', serif;
     text-align: center;
 }
-
+.greeting{
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom:0;
+}
+.my-name span{
+        color:blue;
+}
+/*nav*/
+.menu a{
+    display: block
+}
+.about-main img{
+    display: block;
+    margin:10px auto;
+    width: 700px;
+    border-radius: 20px;
+    border:10px solid #c4942d;
+    padding: 2px;
+}
 /*main*/
 main{
-    width: 60%
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    color:black;
+    width: 75%
+}
+
+li{
+    list-style-type: none;
+    font-size: 24px;
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding:10px;
+}
+
+li::before{
+    <i class="fa-solid fa-bars-progress"></i>;
 }
