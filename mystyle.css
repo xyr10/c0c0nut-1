@@ -1,264 +1,79 @@
 /*global*/
-/*Note 1: Global applies to all*
-/*Note 2: The slash and asterisk allows you to take notes down and is green font*/
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+:root{
+        --primary: #ffcc00;
+}
 body{
-    background-color:lightgray;
-    color: black;
-    font-family: garamond;
+        font-family: 'Verdana', sans-serif;
+        background-color: black;
+        color: white;
 }
-/*please note that Google Fonts is more modern than old ones like Arial, etc.*/
-
-p{
-    line-height: 1.5;
-}
-h1,h2,h3{
-    text-align: center;
-    text-decoration: dashed;
+h1{
+        text-align: center;
 }
 a{
-    text-decoration: none;
-    color: black;
-    font-size: 30px;
+        text-decoration: none;
 }
 img{
-    max-width:80%;
+        max-width: 100%;
 }
 /*utilities*/
-.grid-two-columns{
-    display: flex;
-}
-.two-sm-columns{
-    display: outside; 
-}
-.left-sm-columns{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: auto;
-}
-.right-sm-columns{
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border: 1px solid black;
-    background-color: lightgrey;
-    padding: 10px;
-    height: 150px;
-    width: 100px;
-    margin-right: auto;
-    border-radius: 20px;
-    cursor: pointer;
-}
-.btn{
-    background-color: darkgray;
-    color: black;
-    text-shadow: 1px 1px 1px white, 1px 1px 1px white;
-    margin:50px;
-    padding:20px;
-    text-align:center;
-    border-radius: 5px;
-    letter-spacing: 3px;
-}
-.btn-sm{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: 14px;
-    letter-spacing: 2px;
-    margin: 10px 420px 10px;
-    padding: 20px;
-}
-/*header*/
 
-.site-header{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: black;
-    width:25%;
+/*nav*/
+nav.top-row{
+        background-color: white;
 }
-.site-header img{
-    display: block;
-    margin:10px auto;
-    border-radius: 20px;
-    border:10px solid #c4942d;
-    padding: 2px;
+nav.left-container{
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        color: white;
+        width: 20%;
+}
+nav.navigation{
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        color: black;
+        width: 80%;
+}
+
+/*header*/
+.site-header{
+        background-color: black;
+        text-align: center;
 }
 .site-header h1{
-    text-transform: capitalize;
-    text-align: center;
-    letter-spacing: 6px;
-    font-size: 36px;
-    color:black;
-    text-shadow: 1px 1px 1px white, 2px 2px 1px white;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 3px;
+        font-size: 48px;
+        color:white;
 }
 .site-header h2{
-    text-transform: full-width;
-    text-align: center;
-    letter-spacing: 4px;
-    font-size: 18px;
+        color: yellow;
+        text-align: center;
+        margin-bottom: 20px;
 }
-.geo-location{
-    font-size: 18px;
-    font-weight: 100;
-    font-family: 'Cormorant Garamond', serif;
-    text-align: center;
-}
-.greeting{
-    text-transform: uppercase;
-    font-size: 20px;
-    letter-spacing: 3px;
-    margin-top: 420px;
-    margin-bottom:50px;
-}
-.greeting-about{
-    margin-top: 20px;
-}
-.my-name span{
-        color:blue;
-}    
-
-/* Services*/
-h3{
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 20px;
-}
-.the-services{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 50px;
-}
-.services{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid black;
-    padding: 10px;
-    height: 150px;
-    width: 100px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-.icon{
-    text-align: center;
-    font-size: 40px;
-}
-.service:hover{
-        background-color: white;
-        cursor: pointer;
-}
-/*projects*/
-h1{
-    text-align: left;
-    text-transform: uppercase;
-    margin-top: 100px;
-    margin-bottom: 30px;
-    margin-left: 10px;
-    letter-spacing: 5px;
-    font-size: 20px;
-}
-h2{
-    text-align: left;
-    font-size: 20px;
-    margin: 5px;   
-}
-.the-projects{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 100px;
-}
-.projects{
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    background-color: lightgrey;
-    margin: 5px;
-    padding: 5px;
-    height: 800px;
-    width: 1000px;
-    border-radius: 20px;
-}
-.projects a{
-    background-color: darkgray;
-    font-size: 20px;
-    cursor: pointer;
-}
-.projects img{
-    display: block;
-    max-width: 15%;
-    border-radius: 5px;
-    border:2px solid black;
-    padding: 1px;
-    cursor: pointer;
-}
-.projects img:hover{
-    background-color: red;
-    cursor: pointer;
-}
-.icon{
-    text-align: center;
-    font-size: 40px;
-}
-.service:hover{
-        background-color: white;
-        cursor: pointer;
-}
-/*nav*/
-.menu a{
-    display: block
-}
-.about-main img{
-    display: block;
-    margin:10px auto;
-    width: 700px;
-    border-radius: 20px;
-    border:10px solid #c4942d;
-    padding: 2px;
+.subscriber span{
+        text-decoration:underline;
+        color: white;
+        text-decoration-color: #ffcc00;
 }
 /*main*/
-main{
-    display: inline;
-    flex-direction:column;
-    justify-content: center;
-    color:black;
-    width: 75%;
-}
-li{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    font-size: 24px;
-    margin-bottom: 40px;
-    background-color: whitesmoke;
-    border-radius: 5px;
-    padding:10px;
-}
-.contact{
-    display: left;
-    margin-top: 300px;
-    margin-bottom: 400px;
-    margin-left: 200px;
-    justify-content: center;
-}
-li:before{
-    <i class="fa-solid fa-bars-progress"></i>;
-}
-
-/*footer*/
-
-footer{
+.main-covid img{
         display: flex;
-        flex-direction: column;
-        align-items: center;
 }
-footer a{
-        font-size: 50px;
-        color: blue;
-        margin-right: 30px;
+img{
+        max-width: 30%;
+}
+/*today's picks*/
+.todays-picks h1,h2,h3{
+        text-transform: uppercase;
+}
+.todays-picks span{
+        color: #ffcc00;
+}
+.todays-picks h3{
+        text-decoration: underline;
 }
