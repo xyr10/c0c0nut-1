@@ -61,16 +61,19 @@ img{
     letter-spacing: 3px;
 }
 .btn-sm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     font-size: 14px;
     letter-spacing: 2px;
-    margin: 10px auto;
-    padding:10px;
+    margin: 10px 420px 10px;
+    padding: 20px;
 }
 /*header*/
 
 .site-header{
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: black;
     width:25%;
 }
@@ -105,7 +108,11 @@ img{
     text-transform: uppercase;
     font-size: 20px;
     letter-spacing: 3px;
-    margin-bottom:0;
+    margin-top: 420px;
+    margin-bottom:50px;
+}
+.greeting-about{
+    margin-top: 20px;
 }
 .my-name span{
         color:blue;
@@ -116,7 +123,7 @@ h3{
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 25px;
+    font-size: 20px;
 }
 .the-services{
     display: flex;
@@ -146,27 +153,52 @@ h3{
 }
 /*projects*/
 h1{
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    margin-left: 10px;
     letter-spacing: 5px;
-    font-size: 25px;
+    font-size: 20px;
+}
+h2{
+    text-align: left;
+    font-size: 20px;
+    margin: 5px;   
 }
 .the-projects{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 50px;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 100px;
 }
 .projects{
-    text-align: center;
+    text-align: left;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: left;
     background-color: lightgrey;
-    padding: 10px;
-    height: 150px;
-    width: 100px;
+    margin: 5px;
+    padding: 5px;
+    height: 800px;
+    width: 1000px;
     border-radius: 20px;
+}
+.projects a{
+    background-color: darkgray;
+    font-size: 20px;
+    cursor: pointer;
+}
+.projects img{
+    display: block;
+    max-width: 15%;
+    border-radius: 5px;
+    border:2px solid black;
+    padding: 1px;
+    cursor: pointer;
+}
+.projects img:hover{
+    background-color: red;
     cursor: pointer;
 }
 .icon{
@@ -198,14 +230,22 @@ main{
     width: 75%;
 }
 li{
-    display: inline ;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     background-color: whitesmoke;
     border-radius: 5px;
     padding:10px;
 }
-
+.contact{
+    display: left;
+    margin-top: 300px;
+    margin-bottom: 400px;
+    margin-left: 200px;
+    justify-content: center;
+}
 li:before{
     <i class="fa-solid fa-bars-progress"></i>;
 }
