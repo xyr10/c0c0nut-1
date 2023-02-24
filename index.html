@@ -5,99 +5,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/05d7bf7938.js" crossorigin="anonymous"></script>
+    <style>
+        .link-subscribe {
+            background-color: black;
+            height: 20px;
+            width: 40px;
+        }
+        .yellow {
+            background-color: #ffcc00;
+            height: 100%;
+            width: 100%;
+            transition: transform 1s;
+        }
+        .link-subscribe:hover .yellow{
+            transform: translateX(100%);
+        }
+    </style>
     <link rel="stylesheet" href="mystyle.css">
     <title>NatGeoProject</title>
 </head>
 <body>
-<nav>
-    <div class="top-row"></div>
-        <div class="left-container">
-            <img src="ng-border.png" alt="frame">
-            <img src="ng-logo.png" alt="national-geographic">
-        </div>
-        <div class="navigation">
-            <a href="login.html">Login</a>
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-            <a href="#">Newsletters</a>
-            <a href="#">Subscribe</a>
-            <a href="#">Menu</a>
-            <a href="#"><i class="fa-solid fa-chevron-down"></i></a>
+    <nav class="navigation">
+            <img class="logo" src="ng-logo.png" alt="national-geographic">
+        <div>
+            <a class="link-login" href="login.html">Login</a>
+            <a class="link-search" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a class="link-news" href="#">Newsletters</a>
+            <a class="link-subscribe" href="#">Subscribe</a>
+                <div class="link-subscribe">
+                    <div class="yellow"></div>
+                </div>
+            <a class="link-menu" href="#">Menu</a>
+            <a class="link-downarrow" href="#"><i class="fa-solid fa-chevron-down"></i></a>
         </div>
 </nav>
+<div class="container">
 <header class="site-header">
     <h1>Latest stories</h1>
-    <p class="subscribe"><a href="subscribe.html"><span>Subscribe</span></a> for full access to read stories from National Geographic.</p>
-    <h2>_____</h2>
+    <p><a class="subscribe" href="subscribe.html"><span>Subscribe</span></a> for full access to read stories from National Geographic.</p>
+    <h2>__</h2>
     <div></div>
 </header>    
 <main>
-    <div>
-        <!--add img-->
-        <div class="main-covid">
+    <div class="news-container">
+        <div class="main-news">
             <img src="covidshot.avif" alt="covidshot">
-            <div>   
-                <h3>Science Coronavirus Coverage</h3>
-                <p>COVID can trigger tinnitus. Could the vaccines do the same?</p>
-                <a href="covidshot.html"><i class="fa-solid fa-bars"></i>Read</a>
+            <div class="main-news-text">   
+                    <h3>Science Coronavirus Coverage</h3>
+                    <p>COVID can trigger tinnitus. Could the vaccines do the same?</p>
+                    <a class="read-btn" href="#"><i class="fa-solid fa-bars"></i>Read</a>
             </div>
         </div>
-
-    <div>
-        <!--add img-->
-        <div class="animals-wild"> 
-            <img src="bats.avif" alt="bats">
-            <div>
+        <div class="secondary-news">
+            <div class="secondary-news-img"> 
+                <img src="bats.avif" alt="bats">
+            </div>
+            <div class="secondary-news-text">
                 <h3>Animals wildlife watch</h3>
                 <p>Etsy and eBay are selling dead bats and scientists are disturbed</p>
-                <a href="animals-wild.html"><i class="fa-solid fa-bars"></i>Read</a>
+                <a class="read-btn" href="#"><i class="fa-solid fa-bars"></i>Read</a>
+            </div>
+        </div>
+        <div class="secondary-news"> 
+            <div class="secondary-news-img">
+                <img src="PuertoRico.avif" alt="puerto-rico">
+            </div>
+            <div class="secondary-news-text">
+                <h3>Travel</h3>
+                <p>Puerto Rico's new trail traverses a tropical rainforest</p>
+                <a class="read-btn" href="#"><i class="fa-solid fa-bars"></i>Read</a>
             </div>
         </div>
     </div>
-
-    <div>
-        <!--add img-->
-        <div class="puerto-rico"> 
-            <img src="PuertoRico.avif" alt="puerto-rico">
-            <div>
-                <h3>Travel</h3>
-                <p>Puerto Rico's new trail traverses a tropical rainforest</p>
-                <a href="puerto-rico.html"><i class="fa-solid fa-bars"></i>Read</a>
-            </div>
-        </div>
-   </div>
    <div class="todays-picks">
         <h1><span>|</span> Today's Picks</h1>    
         <div class="small-articles">
-            <div class="pharaoh">
-                <img src="ramses.avif" alt="ramses"> 
+            <div class="small-articles-img">
+                <img src="ramses.jpg" alt="ramses"> 
+            </div>
+            <div class="small-articles-text">
                 <h2>History Magazine</h2>
                 <p>How a pharaoh with 100 children bungled his succession</p>
             </div>
-            <div class="woman">
+        </div>
+        <div class="small-articles">
+            <div class="small-articles-img">
                 <img src="woman.avif" alt="woman"> 
+            </div>
+            <div class="small-articles-text">
                 <h2>Paid content</h2>
                 <p>The African women taking center stage</p>
             </div>
-            <div class="mushrooms">
+        </div>
+        <div class="small-articles">
+            <div class="small-articles-img">
                 <img src="mushrooms.avif" alt="mushrooms"> 
+            </div>
+            <div class="small-articles-text">
                 <h2>Environment</h2>
                 <p>California is having an epic 'supershroom' season</p>
             </div>
-            <div class="eggs">
+        </div>
+        <div class="small-articles">
+            <div class="small-articles-img">
                 <img src="eggs.avif" alt="eggs"> 
-                <h2>Science</h2>
-                <p>What to know about freezing your eggs</p>
             </div>
-            <div class="daylight">
-                <img src="daylight.avif" alt="daylight"> 
+            <div class="small-articles-text">
+                <h2>Science</h2>
+                <p><a class="read-btn"></a>What to know about freezing your eggs</p>
+            </div>
+        </div>
+        <div class="small-articles">
+            <div class="small-articles-img">
+                <img src="time.jpg" alt="daylight"> 
+            </div>
+            <div class="small-articles-text">
                 <h2>Science</h2>
                 <p>Why daylight saving time exists-and is so unpopular</p>
             </div>
-            <h3>See more</h3>
         </div>
-
+        <h3>See more</h3>
     </div>
 </div>
 </main>
+</div>
 </body>
 </html>

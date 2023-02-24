@@ -17,6 +17,18 @@ a{
 img{
         max-width: 100%;
 }
+/*responsive design*/
+@media (min-width: 768px) {
+        .container {
+                width: 750px;
+        }
+}
+@media (min-width: 992px) {
+        .container {
+                width: 970px;
+        }
+}
+
 /*utilities*/
 
 /*nav*/
@@ -34,8 +46,47 @@ nav.navigation{
         display: flex;
         flex-direction: row;
         background-color: white;
+        justify-content: space-between;
         color: black;
-        width: 80%;
+        width: 100%;
+}
+.logo-border{
+
+}
+.logo img{
+        
+}
+.link-login{
+        text-transform: uppercase;
+        color: black;
+        font-size: 14px;
+        letter-spacing: 4px;
+        font-weight: bold;
+        margin-right: 20px;
+
+}
+.link-search{
+        display: none;
+}
+.link-news{
+        display: none;
+}
+.link-subscribe{
+        text-transform: uppercase;
+        color: white;
+        background-color: black;
+        font-size: 14px;
+        letter-spacing: 4px;
+        font-weight: bold;
+        margin-right: 20px;
+        padding: 15px;
+        transition: transform;
+}
+.link-menu{
+
+}
+.link-downarrow{
+
 }
 
 /*header*/
@@ -47,13 +98,20 @@ nav.navigation{
         text-transform: uppercase;
         text-align: center;
         letter-spacing: 3px;
-        font-size: 48px;
+        font-size: 36px;
         color:white;
 }
-.site-header h2{
-        color: yellow;
+.site-header p{
         text-align: center;
-        margin-bottom: 20px;
+        letter-spacing: 1px;
+        font-size: 12px;
+}
+.site-header h2{
+        color: #ffcc00;
+        text-align: center;
+        text-decoration-line: underline;
+        text-decoration-thickness: 4px;
+        margin-bottom: 60px;
 }
 .subscriber span{
         text-decoration:underline;
@@ -61,19 +119,159 @@ nav.navigation{
         text-decoration-color: #ffcc00;
 }
 /*main*/
-.main-covid img{
-        display: flex;
+.main-news{
+        position: relative;
+        height: 450px;
 }
-img{
-        max-width: 30%;
+.main-news img{
+        height: 450px;
+        width: 100%;
+}
+.main-news-text{
+        position: absolute;
+        top: 150px;
+        left: 30px;
+}
+.main-news-text h3{
+        text-transform: uppercase;
+        font-size: 14px;
+
+}
+.main-news-text p{
+        font-size: 24px;
+        font-weight: bold;
+}
+.secondary-news{
+        height: 520px;
+        background-color: white;
+}
+.secondary-news-img{
+        height: 380px;
+        width: 100%;
+}
+.secondary-news-img img{
+        height: 350px;
+        width: 100%;
+        cursor: pointer;
+}
+.secondary-news-img img.cursor{
+        background-color: #ffcc00;
+        offset: 2px 2px;
+}
+.secondary-news-text{
+        color: black;
+        top: 150px;
+        left: 30px;
+}
+.secondary-news-text h3{
+        text-transform: uppercase;
+        font-size: 12px;
+        margin-left: 30px;
+}
+.secondary-news-text p{
+        font-size: 16px;
+        font-weight: bold;
+        margin-left: 30px;
+}
+.secondary-news-text .read-btn{
+        color: black;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 12px;
+        font-weight: bold;
+        margin-left: 30px;
+}
+.puerto-rico{
+        position: relative;
+        height: 450px;
+}
+.puerto-rico img{
+        height: 450px;
+        width: 100%;
+        cursor: pointer;
+}
+
+.puerto-rico-text{
+        position: absolute;
+        top: 150px;
+        left: 30px;
+}
+.puerto-rico-text h3{
+        text-transform: uppercase;
+        font-size: 14px;
+
+}
+.puerto-rico-text p{
+        font-size: 24px;
+        font-weight: bold;
+}
+/*utility*/
+.read-btn{
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 13px;
+        font-weight: bold;
+}
+.container{
+        width:90%;
+        margin: auto;
 }
 /*today's picks*/
 .todays-picks h1,h2,h3{
         text-transform: uppercase;
+        text-align: left;
 }
 .todays-picks span{
         color: #ffcc00;
 }
+.todays-picks h2{
+        font-size: 10px;
+        text-decoration-color: #ffcc00;
+        text-decoration-thickness: 3px;
+}        
 .todays-picks h3{
         text-decoration: underline;
+        text-decoration-color: #ffcc00;
+        text-decoration-thickness: 3px;
+}
+.small-articles{
+        display: flex;
+        justify-content: left;
+        flex-direction: row;
+        background-color: black;
+        margin: 30px;
+}
+.small-articles-img{
+        height: 100px;
+        width: 100px;
+}
+.small-articles-img img{
+        height: 100%;
+        width: 100%;
+}
+.small-articles-text{
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        margin-left: 170px;
+        text-align: top;
+        cursor: pointer;
+}
+.small-articles-text p{
+        cursor: pointer;
+}
+
+.small-articles-text:hover{
+        background-color: black;
+        text-decoration: underline;
+        cursor: pointer;
+        margin-bottom: 5px;
+        transform: 1s;
+}
+.todays-picks h3{
+        text-decoration: underline;
+        text-decoration-color: #ffcc00;
+        text-decoration-thickness: 3px;
+}
 }
